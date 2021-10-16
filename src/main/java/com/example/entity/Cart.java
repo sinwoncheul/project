@@ -19,6 +19,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Table(name = "CART")
 public class Cart {
+    
     @Id
     @Column(name = "CART_NO")
     private Long cart_no = null;
