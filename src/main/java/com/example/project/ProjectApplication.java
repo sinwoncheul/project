@@ -8,14 +8,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(exclude = SecurityAutoConfiguration.class)
-@ComponentScan(basePackages = { "com.example.controller" })
+@ComponentScan(basePackages = { "com.example.controller","com.example.service" })
 @EntityScan(basePackages = { "com.example.entity" })
 @EnableJpaRepositories(basePackages = { "com.example.repository" })
 public class ProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectApplication.class, args);
-		System.out.println(1);
+		System.out.println(11);
 	}
 
 }

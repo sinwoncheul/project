@@ -16,12 +16,12 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
-@Table(name = "USERED")
+@Table(name = "COMPANY")
 @NoArgsConstructor
-public class Usered {
+public class Company {
     @Id
-    @Column(name = "USERED")
-    private Long usered = null;
+    @Column(name = "Company_id")
+    private Long company_id  = null;
 
     @Column(name = "ID")
     private String id = null;
@@ -37,6 +37,9 @@ public class Usered {
 
     @Column(name = "ADDRESS")
     private String address = null;
+
+    @Column(name = "ROLE")
+    private String role = null;
 
     @Column(name = "CREATETIME")
     private Date createtime = null;
